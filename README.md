@@ -33,7 +33,7 @@ You also need to install [pytorch-image-models 0.3.2](https://github.com/rwightm
 ```
 pip install timm==0.3.2
 ```
-More details about environment install see file `env_init`.
+More details about environment installation see file `env_init`.
 
 #### Data Preparation
 
@@ -65,7 +65,7 @@ python sample_tools/ActiveFT_ImageNet.py --feature_path ${PATH to the extracted 
 ```
 
 #### Distribution Calibration
-After data selection, you can calibration the distribution of selected samples.
+After data selection, you can calibrate the distribution of selected samples.
 ```
 # When you run this program for the first time, some commented-out code in the py file needs to be uncommented, such as sections related to file storage, etc.
 
@@ -76,7 +76,7 @@ For more parameter settings, please call ```python DC_v10.py --help``` to view;
 
 ## Model Finetuning
 
-We implement the model finetuning based on the code base of [deit](https://github.com/facebookresearch/deit). You modify their code to allow the training on the data subsets.
+The model finetuning is based on the code base of [deit](https://github.com/facebookresearch/deit). You modify their code to allow the training on the data subsets.
 
 First, make sure you have downloaded the pretrained ViT model. In our default setting, we finetune the DeiT-Small model pretrained with DINO ([ckpt](https://dl.fbaipublicfiles.com/dino/dino_deitsmall16_pretrain/dino_deitsmall16_pretrain.pth)).
 
@@ -90,7 +90,7 @@ The finetuning process may be very sensitive to batch size or learning rate. To 
 
 <!-- [![](https://img.shields.io/static/v1?label=Warning&message=finetuning%20method%20is%20not%20the%20optimal%20one&color=orange)]() -->
 
-**Warning**：The current fine-tuning method is not the optimal one, and improvements on the fine-tuning methods will be discussed in other research works.
+**Warning**：The current finetuning method is not the optimal one, and improvements on the finetuning methods will be discussed in other research works.
 
 ## Acknowledgment
 
