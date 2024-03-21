@@ -1,0 +1,16 @@
+
+# CIFAR10
+python extract_feature.py --dataset CIFAR10 --pretrained_weights ../deit/outputs_LP_FT/CIFAR10/per_2/best_checkpoint.pth --output_dir features_lpft
+
+python extract_feature.py --dataset CIFAR10 --pretrained_weights ../deit/outputs_LP_FT/CIFAR10/per_2/best_checkpoint.pth --output_dir features_lpft --split val
+
+# CIFAR100
+python extract_feature.py --dataset CIFAR100 --pretrained_weights ../deit/outputs_LP_FT/CIFAR100/per_10/best_checkpoint.pth --output_dir features_lpft
+
+python extract_feature.py --dataset CIFAR100 --pretrained_weights ../deit/outputs_LP_FT/CIFAR100/per_10/best_checkpoint.pth --output_dir features_lpft --split val
+
+# ImageNet
+python extract_feature.py --dataset ImageNet --pretrained_weights ../deit/outputs_LP_FT/ImageNet/per_5/best_checkpoint.pth --output_dir features_lpft
+
+python extract_feature.py --dataset ImageNet --pretrained_weights ../deit/outputs_LP_FT/ImageNet/per_5/best_checkpoint.pth --output_dir features_lpft --split val
+

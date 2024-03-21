@@ -1,0 +1,20 @@
+# activate conda env
+conda activate ActiveDC
+
+# export cuda path
+export PATH=/gpfsdata/apps/cuda/11.3/bin:$PATH
+export LD_LIBRARY_PATH=/gpfsdata/apps/cuda/11.3/lib64:$LD_LIBRARY_PATH 
+
+# for faiss-gpu
+export LD_LIBRARY_PATH=/gpfsdata/home/wenshuai/miniconda3/envs/ActiveDC/lib:$LD_LIBRARY_PATH
+
+##################################
+# ######## conda env create ########  #
+##################################
+conda create -n ActiveDC python=3.9
+pip install torch-1.10.0+cu111-cp39-cp39-linux_x86_64.whl
+pip install torchvision-0.11.1+cu111-cp39-cp39-linux_x86_64.whl
+pip install timm==0.3.2
+conda install -c pytorch faiss-gpu
+pip install scikit-learn
+

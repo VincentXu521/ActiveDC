@@ -1,0 +1,8 @@
+
+faiss-gpu==1.7.2, for 2080ti is ok, 3090 is NOT ok.
+
+conda activate DAL_xu
+
+python sample_tools/KMeans_GPU_CIFAR.py
+
+
