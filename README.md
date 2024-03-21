@@ -11,13 +11,16 @@ The pretraining-finetuning paradigm has gained popularity in various computer vi
 from an unlabeled pool for annotation, facilitating subsequent finetuning. However, the use of a limited number of training samples can lead to a biased distribution, potentially resulting in model overfitting. In this paper, we propose a new method called ActiveDC for the active finetuning tasks. Firstly, we select samples for annotation by optimizing the distribution similarity between the subset to be selected and the entire unlabeled pool in continuous space. Secondly, we calibrate the distribution of the selected samples by exploiting implicit category information in the unlabeled pool. The feature visualization provides an intuitive sense of the effectiveness of our method to distribution calibration. We conducted extensive experiments on three image classification datasets with different sampling ratios. The results indicate that ActiveDC consistently outperforms the baseline performance in all image classification tasks.
 The improvement is particularly significant when the sampling ratio is low, with performance gains of up to 10%.
 
-[[paper link]](https://arxiv.org/abs/2311.07634)
+<!-- [[paper link]](https://arxiv.org/abs/2311.07634) -->
 
 ![overview](overview.png)
 
 ## Comparison with other Methods
 Comparison with other active learning and active finetuning algorithms for Image Classification.
-![comp](figs/CIFAR100_v2.png)
+<!-- ![comp](figs/CIFAR100_v2.png) -->
+<div align="center">
+<img src="figs/CIFAR100_v2.png" width="50%">
+</div>
 
 ## Installation
 
