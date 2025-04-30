@@ -101,12 +101,12 @@ This repo code is developed based on [ActiveFT](https://github.com/yichen928/Act
 If you find our work useful, please consider citing the following paper:
 
 ```
-@inproceedings{xws2024activedc,
+@inproceedings{xu2024activedc,
   title={ActiveDC: Distribution Calibration for Active Finetuning},
-  author={Wenshuai Xu and Zhenghui Hu and Yu Lu and Jinzhou Meng and Qingjie Liu and Yunhong Wang},
-  booktitle={Conference on Computer Vision and Pattern Recognition 2024},
-  year={2024},
-  url={https://openreview.net/forum?id=YZkFpCdx3A}
+  author={Xu, Wenshuai and Hu, Zhenghui and Lu, Yu and Meng, Jinzhou and Liu, Qingjie and Wang, Yunhong},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={16996--17005},
+  year={2024}
 }
 ```
 
